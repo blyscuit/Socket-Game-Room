@@ -1,0 +1,25 @@
+
+<div id="gameView">
+  <div>
+    <div class="container text-center padding30 border-top" id="1">
+      <div class="col-md-8" ng-show="activePlayer">
+
+        <ul class="filter" data-option-key="filter">
+          <li><a ng-click="gameAction('rock')" id="a" value="rock">rock</a></li>
+          <li><a ng-click="gameAction('paper')" id="b" value="paper">paper</a></li>
+          <li><a ng-click="gameAction('scissors')" id="c" value="scissors">scissors</a></li>
+          <!-- <li><a ng-click="gameAction('rock')" id="a" value="rock">rock</a></li> -->
+          <!-- <li><a href="#" data-option-value=".web-design">Web Design</a></li>
+          <li><a href="#" data-option-value=".print">Print</a></li> -->
+        </ul>
+      </div>
+      <div id="chatView" class="game-chat-box col-md-4">
+        <ul>
+          <li class="clean" ng-repeat="customer in newCustomers track by $index">{{customer}}</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</div>

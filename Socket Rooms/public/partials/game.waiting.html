@@ -1,0 +1,22 @@
+
+<div id="gameView">
+  <div>
+    <div class="container text-center padding30 border-top" id="1">
+      <div class="col-md-8 center">
+
+        <div class="center">
+          <h3>{{roomName}}</h3>
+          <button class="button center"  ng-click="gameStart()" value="Start" >Start</button>
+        </div>
+        <div class="wait-chat-box center">
+          <ul>
+            <li ng-repeat="customer in newCustomers track by $index">{{customer}}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>

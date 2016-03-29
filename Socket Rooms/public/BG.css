@@ -1,0 +1,61 @@
+input.black-line{
+	height: 40px;
+	color: #000;
+	padding: 0 10px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1.5px solid black;
+	width: auto;
+	text-align:middle;
+}
+
+a.hard-box {
+	color: #000;
+	border: 1px solid #000;
+	font-family: "Montserrat","Helvetica Neue",Arial,sans-serif;
+	font-size: 10px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	padding: 6px 10px;
+}
+
+a.hard-box:hover {
+	color: #fff;
+	background: #000;
+}
+
+.game-chat-box{
+	height:80%;
+	overflow:scroll;
+	padding: 50px 10px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1.5px solid black;
+	text-align:left;
+
+}
+
+.game-chat-box li {
+}
+
+.wait-chat-box{
+	height:80%;
+	overflow:scroll;
+	padding: 50px 10px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1.5px solid black;
+	text-align:left;
+
+}
+
+.wait-chat-box li {
+	background-color: #fff;
+border-bottom: 0.8px solid #e8e8e8;
+border-left: 1.5px solid #0f0f0f;
+border-radius: 0px;
+padding: 10px 20px;
+}

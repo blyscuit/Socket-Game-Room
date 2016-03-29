@@ -1,0 +1,26 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<script>
+var socket = io.connect('http://localhost:8080');
+
+  var room = "1";
+  var gameInSession = false;
+// on connection to server, ask for user's name with an anonymous callback
+socket.on('connect', function(){
+  // call the server-side function 'adduser' and send one parameter (value of prompt)
+
+});
+
+// listener, whenever the server emits 'updatechat', this updates the chat body
+socket.on('updatechat', function (username, data) {
+  $('#conversation').append('<b>'+username + ':</b> ' + data + '<br>');
+  $('#conversation2').append('<b>'+username + ':</b> ' + data + '<br>');
+});
+</script>
+
+<div id="game" style="float:left;width:300px;height:250px;overflow:scroll-y;padding:10px;">
+	<div id="conversation"></div>
+
+	confusians 2016
+</div>
