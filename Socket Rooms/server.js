@@ -35,7 +35,7 @@ var games = {};
 // rooms which are currently available in chat
 var rooms = ['1'];
 
-games['1']=require('./gameRockPaperScissor');
+games['1']=require('./game');
 var CUSTOMCONNSTR_MONGOLAB_URI  = "mongodb://admin:admin@ds023428.mlab.com:23428/boardgames_db";
 io.sockets.on('connection', function (socket) {
 
