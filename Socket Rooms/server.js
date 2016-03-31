@@ -35,7 +35,7 @@ var games = {};
 // rooms which are currently available in chat
 var rooms = ['1'];
 
-games['1']=require('./game');
+games['1']=require('./gameCodenames');
 var CUSTOMCONNSTR_MONGOLAB_URI  = "mongodb://admin:admin@ds023428.mlab.com:23428/boardgames_db";
 io.sockets.on('connection', function (socket) {
 
@@ -87,7 +87,7 @@ io.sockets.on('connection', function (socket) {
 		// });
 
 
-		var game = require('./gameRockPaperScissor');
+		var game = require('./gameCodenames');
 		// console.log("game:"+newRoom.toUpperCase()+game);
 		game.setRoom(newRoom);
 		games[newRoom]=game;
