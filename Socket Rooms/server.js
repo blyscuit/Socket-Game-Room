@@ -87,7 +87,7 @@ io.sockets.on('connection', function (socket) {
 		// });
 
 
-		var game = require('./gameRockPaperScissor');
+		var game = require('./game');
 		// console.log("game:"+newRoom.toUpperCase()+game);
 		game.setRoom(newRoom);
 		games[newRoom]=game;
