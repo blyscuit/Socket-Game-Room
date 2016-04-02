@@ -1,12 +1,16 @@
 {
-     "name": "_box",
-     "description": "board game application with socket.io",
-     "version": "0.0.1",
-     "dependencies": {
-        "express": "",
-        "socket.io": "",
-        "mongodb": "",
-		"underscore": "1.x",
-		"optimist": "0.6.1"
-     }
+  "name": "_box",
+  "description": "board game application with socket.io",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "",
+    "socket.io": "",
+    "mongodb": "",
+    "underscore": "1.x",
+    "optimist": "0.6.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js"
 }

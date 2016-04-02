@@ -12,7 +12,7 @@ global.argv = require ('optimist')
 .alias('t', 'countdown')
 .argv
 ;
-var port = process.env.PORT || 8080;
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 global.io = require('socket.io').listen(app.listen(port));
 console.log("Listening on port " + port);
