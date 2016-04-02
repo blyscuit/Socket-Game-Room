@@ -1,5 +1,4 @@
 var express = require('express');
-var WebSocketServer = require("ws").Server
 var app = express()
 , http = require('http')
 , server = http.createServer(app)
@@ -15,7 +14,7 @@ global.argv = require ('optimist')
 ;
 var port = process.env.PORT || 8080;
 
-global.io = new WebSocketServer({server: server});//require('socket.io').listen(app.listen(port));
+global.io = require('socket.io').listen(app.listen(port));
 console.log("Listening on port " + port);
 
 app.use("/", express.static(__dirname + '/public'));
